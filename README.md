@@ -1,25 +1,25 @@
 union-find-inspector
 ====================
 
-A tree visualizer for inspecting Disjoint-Set Data (or union-find data structure).
+A tree visualizer for inspecting Disjoint-Set (or Union-Find) data structure.
 
-![A disjoint-set data representation using a sunray tree visualization](/images/union-find-sunray-400.jpg "Sunray Tree")
+![A disjoint-set data structure representation using a sunray tree visualization](/images/union-find-sunray-400.jpg "Sunray Tree")
 
 ## Usage ##
 
-You need Maven to build and execute the project. [Download, install it](http://maven.apache.org/) and ensure the Maven binaries are available on the classpath. Once done, change directory in the root of this clones project and execute:
+You need Maven to build and execute the project. [Download, install it](http://maven.apache.org/) and ensure the Maven binaries are available in your path (via the `PATH` environment variable for example). Once done, change directory in the root of this cloned project and execute:
 
 ```
 mvn package
 ```
 
-Then, change directory in the newly created *target* directory and execute the *union-find-inspector-1.0.jar* file (with double-click for example).
+Then, change directory in the newly created *target* directory and execute the *union-find-inspector-1.0.jar* file.
 
 ## File Formats ##
 
-The visualizer supports two file formats to represent a disjoint-set data structure: a percolation entries file and an array of ids file.
+The visualizer supports two file formats to represent a disjoint-set data structure: a percolation entries file and an array of *IDs *file.
 
-### Percolation File ###
+### Percolation File (*.perc) ###
 
 The percolation file contains the dimension and union instructions for the cell joins. It follows exactly the same format as the *Algorithms, Part 1* Coursera class:
 
@@ -68,18 +68,20 @@ This file should have one line. The line should be a copy/paste of the Java debu
 
 ### Misc ###
 
-Labels are popping up to show the node hierarchy in the trees:
+Labels pop-ups will show the node hierarchy in the trees:
 
 ![Labels](/images/union-find-treemap-25-label.jpg "Labels")
 
 ## Coursera Students ##
 
-You can plug-in your `Percolation` implementation into this visualizer, but it will need a few modifications. Those are necessary because the provided libraries for the class do not play well with standard Java classes. 
+You can plug-in your `Percolation` implementation into this visualizer, but it will need a few modifications. Those are necessary because the provided libraries do not play well with standard Java classes. 
 
-In more details (if you care), the provided libraries have classes that reside in the default Java package. This practice make these impossible to import in other classes that are not in the default package as well. Hence I doctored the libraries with a modified version of [JarJar](https://code.google.com/p/jarjar/) of mine (another story...). The authors probably did that to make sure that their libraries would not end up in production. **Please be advised to not use them in such environment; responsibility and risks will be all yours as proper warning as been given here.**
+In more details (if you care), the provided libraries have classes that reside in the default Java package. This practice make these impossible to import in other classes that are not in the default package as well. Hence I doctored the libraries with a modified version of mine of [JarJar](https://code.google.com/p/jarjar/) (another story...). The authors probably did that to make sure that their libraries would not end up in production. **Please be advised to not use these in such environment; responsibility and risks will be all yours as proper warning has been given here.**
+
+The modifications to perform:
 
 1. Implement the `IPercolation` interface.
 1. Change the package signature of your `Percolation` class from the default to `org.jlr.percolation`.
 1. Name the `WeightedQuickUnionUF` class member to `percolated`.
  
-Some fo these restrictions could be removed but as there are no requirements or demands for it at the moment... <:o)
+Some of these restrictions could be eased or removed if there is demand. <:o)
