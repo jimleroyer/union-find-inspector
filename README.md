@@ -13,7 +13,11 @@ You need Maven to build and execute the project. [Download, install it](http://m
 mvn package
 ```
 
-Then, change directory in the newly created *target* directory and execute the *union-find-inspector-1.0.jar* file.
+Then, change directory in the newly created *target* directory and execute the *union-find-inspector-1.0.jar* file. You can either double-click the *jar* file in Windows or via the command-line:
+
+```
+java -jar union-find-inspector-1.0.jar
+```
 
 ## File Formats ##
 
