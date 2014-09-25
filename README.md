@@ -76,7 +76,7 @@ Labels are popping up to show the node hierarchy in the trees:
 
 You can plug-in your `Percolation` implementation into this visualizer, but it will need a few modifications. Those are necessary because the provided libraries for the class do not play well with standard Java classes. 
 
-In more details (if you care), the provided libraries have class that reside in the default Java package. This practice make the classes impossible to import in other classes that are not in the default package. Hence I doctored the libraries with a modified version of [JarJar](https://code.google.com/p/jarjar/) of mine (another story...). The authors probably did that to make sure that their libraries would not end up in production. **Please be advised to not use them in such environment; responsibility and risks will be all yours as proper warning as been given here.**
+In more details (if you care), the provided libraries have classes that reside in the default Java package. This practice make these impossible to import in other classes that are not in the default package as well. Hence I doctored the libraries with a modified version of [JarJar](https://code.google.com/p/jarjar/) of mine (another story...). The authors probably did that to make sure that their libraries would not end up in production. **Please be advised to not use them in such environment; responsibility and risks will be all yours as proper warning as been given here.**
 
 1. Implement the `IPercolation` interface.
 1. Change the package signature of your `Percolation` class from the default to `org.jlr.percolation`.
