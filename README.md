@@ -7,7 +7,7 @@ A tree visualizer for inspecting Disjoint-Set (or Union-Find) data structure.
 
 ## Why? ##
 
-First for curiousity, for looking at different ways that a tree can be formed. The array data structure isn't a human friendly way to visualize.
+First for curiousity, for seeing in a human-friendly way how a tree built from a disjoint-set looks like. The array data upon which it relies isn't helpful for understanding its structure.
 
 Second, to help any people out there who would want to modify the algorithm to their requirements. 
 
