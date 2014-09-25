@@ -89,3 +89,9 @@ The modifications to perform:
 1. Name the `WeightedQuickUnionUF` class member to `percolated`.
  
 Some of these restrictions could be eased or removed if there is demand. <:o)
+
+### Why? ###
+
+First for curiousity, for looking at different ways that a tree can be formed. The array data structure isn't a human friendly way to visualize.
+
+Second, to help any people out there who would want to modify the algorithm to their requirements. 
