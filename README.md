@@ -5,6 +5,12 @@ A tree visualizer for inspecting Disjoint-Set (or Union-Find) data structure.
 
 ![A disjoint-set data structure representation using a sunray tree visualization](/images/union-find-sunray-400.jpg "Sunray Tree")
 
+### Why? ###
+
+First for curiousity, for looking at different ways that a tree can be formed. The array data structure isn't a human friendly way to visualize.
+
+Second, to help any people out there who would want to modify the algorithm to their requirements. 
+
 ## Usage ##
 
 You need Maven to build and execute the project. [Download, install it](http://maven.apache.org/) and ensure the Maven binaries are available in your path (via the `PATH` environment variable for example). Once done, change directory in the root of this cloned project and execute:
@@ -89,9 +95,3 @@ The modifications to perform:
 1. Name the `WeightedQuickUnionUF` class member to `percolated`.
  
 Some of these restrictions could be eased or removed if there is demand. <:o)
-
-### Why? ###
-
-First for curiousity, for looking at different ways that a tree can be formed. The array data structure isn't a human friendly way to visualize.
-
-Second, to help any people out there who would want to modify the algorithm to their requirements. 
