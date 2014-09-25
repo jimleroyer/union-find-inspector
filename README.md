@@ -3,6 +3,7 @@ union-find-inspector
 
 A tree visualizer for inspecting Disjoint-Set Data (or union-find data structure).
 
+![A disjoint-set data representation using a sunray tree visualization](/images/union-find-sunray-400.jpg "Sunray Tree")
 
 ## File Formats ##
 
@@ -41,3 +42,19 @@ This file should have one line. The line should be a copy/paste of the Java debu
 ```
 [0,1,0,0,4,5,6,0,0,9,10,26,12,0,0,15,11,17,0,19,26,26,22,26,24,26,0]
 ```
+
+## Examples ##
+
+### Hyperbolic Tree ###
+
+![A disjoint-set data representation using a hyperbolic tree visualization](/images/union-find-hypertree-25.jpg "Hyperbolic Tree")
+
+### Treemap ###
+
+![A disjoint-set data representation using a treemap visualization](/images/union-find-treemap-25.jpg "Treemap")
+
+### Misc ###
+
+Labels are popping up to show the node hierarchy in the trees:
+
+![Labels](/images/union-find-treemap-25-label.jpg "Labels")
