@@ -53,6 +53,10 @@ This file should have one line. The line should be a copy/paste of the Java debu
 
 ![A disjoint-set data representation using a treemap visualization](/images/union-find-treemap-25.jpg "Treemap")
 
+### Sunray Tree ###
+
+![A disjoint-set data representation using a sunray tree visualization](/images/union-find-sunray-25.jpg "Sunray Tree")
+
 ### Misc ###
 
 Labels are popping up to show the node hierarchy in the trees:
