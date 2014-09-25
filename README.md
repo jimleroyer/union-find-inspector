@@ -5,7 +5,7 @@ A tree visualizer for inspecting Disjoint-Set (or Union-Find) data structure.
 
 ![A disjoint-set data structure representation using a sunray tree visualization](/images/union-find-sunray-400.jpg "Sunray Tree")
 
-### Why? ###
+## Why? ##
 
 First for curiousity, for looking at different ways that a tree can be formed. The array data structure isn't a human friendly way to visualize.
 
