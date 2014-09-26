@@ -54,7 +54,7 @@ The first line contains an integer that informs of the cell table dimension. In 
 
 The following lines contains two coordinates on every line that indicates a union operation on the specified cells. The first coordinate is the X axis (horizontal) and the second one the Y axis (vertical).
 
-### IDs File ###
+### IDs File (*.uf) ###
 
 This file should have one line. The line should be a copy/paste of the Java debugger output of the disjoint-set array. It should look as the following:
 
