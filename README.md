@@ -84,11 +84,7 @@ Labels pop-ups will show the node hierarchy in the trees:
 
 ## Coursera Students ##
 
-You can plug-in your `Percolation` implementation into this visualizer, but it will need a few modifications. Those are necessary because the provided libraries do not play well with standard Java classes. 
-
-In more details (if you care), the provided libraries have classes that reside in the default Java package. This practice make these impossible to import in other classes that are not in the default package as well. Hence I doctored the libraries with a modified version of mine of [JarJar](https://code.google.com/p/jarjar/) (another story...). The authors probably did that to make sure that their libraries would not end up in production. **Please be advised to not use these in such environment; responsibility and risks will be all yours as proper warning has been given here.**
-
-The modifications to perform:
+You can plug-in your `Percolation` implementation into this visualizer, but it will need a few modifications. The modifications to perform:
 
 1. Implement the `IPercolation` interface.
 1. Change the package signature of your `Percolation` class from the default to `org.jlr.percolation`.
